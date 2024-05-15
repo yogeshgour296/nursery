@@ -1,0 +1,140 @@
+.features-carousel .owl-nav {
+  margin-top: 15px;
+}
+.features-carousel .owl-nav button.disabled {
+  opacity: 0.3;
+  cursor: no-drop;
+}
+.features-carousel .owl-nav .owl-prev {
+  margin-right: 15px;
+}
+/********************************
+BUBBLE ANIMATION
+********************************/
+.bubble-animation {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  user-select: none;
+}
+.bubble-1 {
+  left: 5%;
+  animation-delay: 1s;
+}
+.bubble-1 .bubble-animation-y {
+  animation-duration: 7s;
+  animation-delay: 0s;
+}
+
+.bubble-2 {
+  left: 40%;
+  animation-delay: 2s;
+}
+.bubble-2 .bubble-animation-y {
+  animation-duration: 6s;
+  animation-delay: 2s;
+}
+
+.bubble-3 {
+  right: 15%;
+  animation-delay: 1s;
+}
+.bubble-3 .bubble-animation-y {
+  animation-duration: 5s;
+  animation-delay: 1.5s;
+}
+
+.bubble-4 {
+  left: 25%;
+  animation-delay: 2s;
+}
+.bubble-4 .bubble-animation-y {
+  animation-duration: 6s;
+  animation-delay: 3s;
+}
+
+.bubble-5 {
+  left: 30%;
+  animation-delay: 1s;
+}
+.bubble-5 .bubble-animation-y {
+  animation-duration: 5s;
+  animation-delay: 0;
+}
+
+.bubble-6 {
+  left: 60%;
+  animation-delay: 2s;
+}
+.bubble-6 .bubble-animation-y {
+  animation-duration: 7s;
+  animation-delay: 3.5s;
+}
+
+.bubble-7 {
+  right: 50%;
+  animation-delay: 1s;
+}
+.bubble-7 .bubble-animation-y {
+  animation-duration: 5.5s;
+  animation-delay: 3s;
+}
+
+.bubble-8 {
+  right: 10%;
+  animation-delay: 2s;
+}
+.bubble-8 .bubble-animation-y {
+  animation-duration: 7s;
+  animation-delay: 3s;
+}
+
+.bubble-container {
+  position: absolute;
+  top: -100px;
+  cursor: pointer;
+}
+.bubble-container img {
+  max-width: 70px;
+}
+
+.bubble-animation-x {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: bubbleXAnimFrames;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
+.bubble-animation-y:hover {
+  animation-play-state: paused;
+}
+.bubble-animation-y {
+  animation-iteration-count: infinite;
+  animation-name: bubbleYAnimFrames;
+  animation-timing-function: linear;
+}
+
+@keyframes bubbleXAnimFrames {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes bubbleYAnimFrames {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 85%;
+  }
+  100% {
+    transform: translateY(700px);
+    opacity: 0;
+  }
+}
